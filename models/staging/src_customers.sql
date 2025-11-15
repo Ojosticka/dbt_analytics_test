@@ -1,6 +1,6 @@
-with warehouse_staging.customers as (
+with warehouse_staging_customers as (
     select *
-    from warehouse_staging.customers
+    from olist.warehouse_staging.customers
 )
 
 select  CUSTOMER_ID,
@@ -8,4 +8,4 @@ select  CUSTOMER_ID,
         CUSTOMER_ZIP_CODE_PREFIX,
         CUSTOMER_CITY,
         CUSTOMER_STATE AS customer_state_acronym
-from warehouse_staging.customers
+from warehouse_staging_customers
