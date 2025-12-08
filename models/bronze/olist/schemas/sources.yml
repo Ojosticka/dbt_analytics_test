@@ -1,0 +1,16 @@
+version: 2
+
+sources:
+  - name: warehouse_staging  # a database name
+    database: olist
+    schema: warehouse_staging
+    description : 'This is the sales data from olist'
+    tables:
+      - name: customers
+      - name: orders
+      - name: order_items
+      - name: order_payments
+      - name: order_reviews
+      - name: product
+      - name: product_category_name_translation
+      - name: sellers
